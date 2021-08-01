@@ -34,3 +34,10 @@ function generate(){
     }
 
 }
+
+function CopyToClipboard(){
+    textbox = document.getElementById("result");
+    textbox.select();
+    textbox.setSelectionRange(0, 99999);
+    document.execCommand("copy");
+}
